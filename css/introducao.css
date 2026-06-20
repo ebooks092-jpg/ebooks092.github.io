@@ -1,0 +1,92 @@
+.section-introducao {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px 20px;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-rows: auto 1fr;
+}
+
+.div-img-introducao img {
+    width: 360px;
+    display: block;
+    background-repeat: no-repeat;
+    position: center;
+}
+
+.div-h1-introducao {
+    margin-left: 6rem;
+    text-align: left;
+}
+
+.div-h1-introducao h1 {
+    font-size: 72px;
+    position: relative;
+    line-height: 5rem;
+}
+
+.div-h1-introducao h1::before {
+    content: "";
+    background: url(/img/detalhe.svg);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    bottom: 4rem;
+    left: -50px;
+    right: 0;
+}
+
+.div-h1-introducao p {
+    font-size: 24px;
+    color: grey;
+}
+
+@media (max-width: 800px) {
+
+    .section-introducao {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 0px;
+        justify-content: center;
+        align-items: start;
+        text-align: left;
+    }
+
+    .div-img-introducao img {
+        display: none;
+    }
+
+    .div-h1-introducao {
+        text-align: left;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+
+    .div-h1-introducao h1 {
+        font-size: 32px;
+        line-height: 2.5rem;
+        position: relative;
+    }
+
+
+    .div-h1-introducao h1::before {
+        content: "";
+        background: #77ff00;
+        background: linear-gradient(256deg, rgba(119, 255, 0, 1) 0%, rgba(195, 255, 0, 1) 100%, rgba(255, 255, 255, 0.77) 53%);
+        position: absolute;
+        width: 30px;
+        height: 10px;
+        bottom: 7.3rem;
+        left: 0;
+        border-radius: 10px;
+    }
+
+    .div-h1-introducao p {
+        font-size: 20px;
+        color: grey;
+        text-align: left;
+    }
+}

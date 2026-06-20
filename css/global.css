@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    text-align: center;
+    color: #141414;
+}
+
+body::selection {
+    background-color: rgba(202, 202, 202, 0.692);
+}
+
+header, 
+main, 
+section, 
+footer {
+  /* Define o limite máximo de largura para todas as seções */
+  max-width: 1200px;
+  
+  /* Centraliza todas as seções no meio da tela */
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Garante que o conteúdo não cole na borda se a tela for menor que 1200px */
+  padding-left: 20px;
+  padding-right: 20px;
+}

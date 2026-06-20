@@ -1,0 +1,99 @@
+footer {
+    width: 100%;
+    color: white;
+    background-color: #000000;
+    box-shadow: 0 0 0 100vw #000000;
+    clip-path: inset(0 -100vw);
+}
+
+.container-final {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 40px 20px;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    gap: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-final .p-final {
+    font-size: 25px;
+    text-align: left;
+    line-height: 40px;
+    position: relative;
+}
+
+
+.p-final::before {
+    content: "";
+    background: #f7f7f7;
+    background: linear-gradient(179deg, rgba(247, 247, 247, 1) 0%, rgba(4, 245, 0, 1) 100%, rgba(255, 255, 255, 0.77) 53%);
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    bottom: 4rem;
+    left: -1.7rem;
+    right: 0;
+    top: 0.6rem;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.final-addres h3 {
+    font-size: 40px;
+    text-align: center;
+}
+
+.p-direitos {
+    color: #a3a3a3;
+    text-align: left;
+    margin-top: 30px;
+}
+
+@media (max-width: 800px) {
+
+    .container-final {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        padding-top: 4rem;
+        padding-bottom: 3rem;
+        align-items: start;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .container-final .p-final {
+        font-size: 18px;
+        text-align: left;
+        line-height: 23px;
+    }
+
+
+    .p-final::before {
+        display: none;
+    }
+
+    .final-addres {
+        margin-top: 30px;
+    }
+
+    .final-addres h3 {
+        font-size: 20px;
+        text-align: left;
+    }
+
+    .p-direitos {
+        color: #a3a3a3;
+        text-align: left;
+        margin-top: 30px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+
+}

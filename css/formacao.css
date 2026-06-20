@@ -1,0 +1,227 @@
+.section-formacao {
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-color: #141414;
+    box-shadow: 0 0 0 100vw #141414;
+    clip-path: inset(0 -100vw);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    padding: 40px 20px;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    gap: 100px;
+}
+
+.section-formacao h2 {
+    font-size: 128px;
+    color: #000000;
+    line-height: 128px;
+    text-transform: uppercase;
+    word-break: break-all;
+    text-align: left;
+    max-width: 400px;
+}
+
+.formacao-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+    max-width: 800px;
+    padding-left: 2rem;
+}
+
+.p-formacao {
+    font-size: 25px;
+    text-align: left;
+    line-height: 35px;
+    color: #a3a3a3;
+}
+
+.pStrong-formacao {
+    color: white;
+}
+
+.container-cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.formacao-cards {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-right: 40px;
+    border-radius: 10px;
+}
+
+.formacao-cards p {
+    text-transform: uppercase;
+    color: #a3a3a3;
+    font-size: 16px;
+
+}
+
+.formacao-cards h3 {
+    font-size: 17px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.formacao-cards h3::before {
+    content: "";
+    position: absolute;
+    background: #54ff10;
+    width: 25px;
+    height: 20px;
+    left: -26px;
+    border-radius: 2px;
+    z-index: -1;
+}
+
+.formacao-cards h4 {
+    margin-top: 30px;
+    color: #a3a3a3;
+    font-weight: 0.3;
+}
+
+.div-cursos {
+    margin-top: 3rem;
+}
+
+.div-cursos h3 {
+    color: #a3a3a3;
+    font-size: 16px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.div-cursos .h31::before {
+    content: "";
+    background: url(/img/cursos.svg);
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    left: -35px;
+    right: 0;
+}
+
+.div-cursos .h32::before {
+    content: "";
+    background: url(/img/idiomas.svg);
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    left: -35px;
+    right: 0;
+}
+
+.div-cursos-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div-cursos-grid p {
+    margin-top: 10px;
+}
+
+
+.div-cursos-grid span {
+    color: #a3a3a3;
+}
+
+@media (max-width: 800px) {
+    .section-formacao {
+        align-items: start;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        padding-top: 0;
+        padding-bottom: 7rem;
+        height: 1020px;
+        gap: 100px;
+    }
+
+    .section-formacao h2 {
+        font-size: 30px;
+        color: #e0e0e0;
+        color: #ffffff;
+        margin-bottom: 0;
+        max-width: auto;
+        height: 0px;
+        padding: 0;
+    }
+
+    .formacao-container {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        max-width: auto;
+        padding-left: 0rem;
+        align-items: start;
+    }
+
+    .p-formacao {
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.5rem;
+    }
+
+    .container-cards {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 10px;
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .formacao-cards {
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .div-cursos-grid p {
+        margin-top: 20px;
+    }
+
+
+    .div-cursos .h31::before {
+        content: "";
+        background: url(/img/cursos.svg);
+        position: absolute;
+        width: 30px;
+        height: 20px;
+        z-index: -1;
+        background-repeat: no-repeat;
+        left: 0px;
+        right: 0;
+        bottom: 1.5rem;
+    }
+
+    .div-cursos .h32::before {
+        content: "";
+        background: url(/img/idiomas.svg);
+        position: absolute;
+        width: 30px;
+        height: 20px;
+        z-index: -1;
+        background-repeat: no-repeat;
+        left: 0px;
+        right: 0;
+        bottom: 1.5rem;
+    }
+
+    .span-time {
+        margin-top: 20px;
+    }
+
+}
